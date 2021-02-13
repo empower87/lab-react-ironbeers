@@ -1,6 +1,9 @@
 * {
   padding: 1px;
-  font-size: 14px;
+  margin: 0;
+}
+body {
+  font-size: 12px;
 }
 header {
   background: #3DC4FC;
@@ -17,7 +20,7 @@ header {
 }
 .list-image {
   width: 25%;
-  padding: 2%;
+  padding: 3%;
 }
 .list-image img {
   width: 100%;
@@ -27,9 +30,11 @@ header {
 .list-details {
   width: 70%;
   height: 100%;
+  padding: 3%;
 }
 .listStyle {
   display: flex;
-  height: 20vh;
+  height: 22vh;
   border-bottom: 1px solid grey;
+  padding: 5% 0 5% 0;
 }

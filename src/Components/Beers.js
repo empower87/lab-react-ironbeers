@@ -23,7 +23,7 @@ function Beers(props) {
                     <img src={each.image_url} />
                 </div>
                 <div className={'list-details'}>
-                    <h2>{each.name}</h2>
+                    <h1>{each.name}</h1>
                     <h4>{each.tagline}</h4>
                     <p><b>Created by:</b> {each.contributed_by}</p>
                 </div>
