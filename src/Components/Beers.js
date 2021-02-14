@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import allBeers from '../beers.png'
 import axios from 'axios'
 import '../App.css'
 import { Link } from 'react-router-dom'
@@ -37,8 +36,6 @@ function Beers(props) {
 
     return (
         <div>
-            <img src={allBeers} alt="" className={'home-images'}/>
-            <h1>All Beers</h1>
             <div className={'beer-list-container'}>
                 {showBeers()}
             </div>
