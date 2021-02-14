@@ -1,14 +1,15 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import allBeers from '../beers.png'
 import axios from 'axios'
 import '../App.css'
+import { Link } from 'react-router-dom'
 
 function Beers(props) {
 
     const [beers, setBeers] = useState([])
 
     useEffect(() => {
-        axios.get("https://ih-beers-api2.herokuapp.com/beers/")
+        axios.get("https://ih-beers-api2.herokuapp.com/beers")
              .then(res => {
                 console.log(res)
                 setBeers(res.data)
@@ -18,15 +19,17 @@ function Beers(props) {
     const showBeers = () => {
         return beers.map((each) => {
             return (
-                <li className={'listStyle'}>
-                <div className={'list-image'}>
-                    <img src={each.image_url} />
-                </div>
-                <div className={'list-details'}>
-                    <h1>{each.name}</h1>
-                    <h4>{each.tagline}</h4>
-                    <p><b>Created by:</b> {each.contributed_by}</p>
-                </div>
+                <li className={'listStyle'} key={each._id}>
+                    <div className={'list-image'}>
+                        <Link to={`/Beers/${each._id}`}>
+                            <img src={each.image_url} />
+                        </Link>
+                    </div>
+                    <div className={'list-details'}>
+                        <h1>{each.name}</h1>
+                        <h4>{each.tagline}</h4>
+                        <p><b>Created by:</b> {each.contributed_by}</p>
+                    </div>
                 </li>
             )
         })

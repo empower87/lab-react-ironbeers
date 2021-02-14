@@ -29,8 +29,10 @@ header {
 }
 .list-details {
   width: 70%;
-  height: 100%;
   padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .listStyle {
   display: flex;

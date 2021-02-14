@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import axios from 'axios'
+import { Switch, Route } from 'react-router-dom'
+import Home from './Components/Home.js'
 import Beers from './Components/Beers.js'
 import RandomBeer from './Components/RandomBeer.js'
 import NewBeer from './Components/NewBeer.js'
+import SingleBeer from './Components/SingleBeer.js'
+
 
 function App() {
 
@@ -11,9 +14,12 @@ function App() {
     <div className="App">
       <header>
       </header>
-      <Beers />
-      {/* <RandomBeer />
-      <NewBeer /> */}
+
+      <Switch>
+        <Route exact path="/" render={(props) => <Home {...props} />} />
+        <Route exact path="/Beers" render={(props) => <Beers {...props} />} />
+        <Route exact path="/Beers/:id" render={(props) => <SingleBeer {...props} />} />
+      </Switch>
     </div>
   );
 }
