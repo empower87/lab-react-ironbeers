@@ -90,28 +90,16 @@ html {
   align-items: center;
   margin: 0 auto;
 }
-.social-list {
-  display: flex;
-}
-.social-list li {
-  height: 30px;
-  width: 35px;
-  color: #ec6aa0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 10px 0px 10px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 8px #464646, -4px -4px 8px #717171;
-}
 .neo-list li {
   height: 40px;
   width: 40px;
+  color:#ec6aa0;
   list-style-type: none;
   padding: 5px;
   text-align: center;
   font-weight: bold;
+  font-size: .9em;
+  text-align: center;
   margin: 0px 10px 0px 10px;
   border-radius: 10px;
   /* background: #e0e0e0; */
@@ -120,31 +108,30 @@ html {
 } 
 .Home {
   height: 100%;
-  background-image: url('./images/house-arrest.gif');
   /* background-image: url('./images/bg2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center; */
+  background: #ecf0f3;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 footer {
-  height: 15vh;
+  height: 10vh;
   background: #5c5c5c;
   width: 100%;
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   align-items: center;
-  box-shadow: 0px -5px 5px 5px #4646469e;
+  box-shadow: 0px -5px 8px 0px #464646;
 }
 .main-stuff {
   width: 100%;
-  height: 60vh;
+  height: 100%;
   box-shadow: 0px -5px 6px 4px #4848487a;
   background: #5c5c5c;
   align-items: center;
@@ -159,26 +146,27 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background: #20cfac;
-  box-shadow: inset 2px 2px 5px 2px #1aa68a, inset -2px -2px 4px 2px #3fffd9;
+  background: #5c5c5c;
+  box-shadow: inset 4px 4px 8px #464646,
+              inset -4px -4px 8px #717171;
 }
 header {
-  /* background-image: url('./images/house-arrest.gif'); */
+  background-image: url('./images/house-arrest.gif');
   background-size: cover;
-  height: 18vh;
+  height: 30vh;
   width: 100%;
 }
 .bottom-stuff {
-  width: 95%;
-  height: 96%;
+  width: 90%;
+  height: 91%;
   align-items: center;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   background: #5c5c5c;
-  box-shadow: 2px 2px 4px 2px #1aa589, -2px -2px 3px 2px #3fffd9;
+  box-shadow: 3px 3px 8px 0px #464646, 
+              -3px -3px 8px 0px #717171;
 }
-
 .hammy {
   width: 35px;
   height: 5px;
@@ -188,7 +176,7 @@ header {
 .suggestions {
   width: 85%;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,26 +220,6 @@ header {
   background-repeat: no-repeat;
 } */
 .button-icons {
-  height: 2.3em;
-  width: 2.3em;
-  filter: invert(95%) sepia(12%) saturate(656%) hue-rotate(21deg) brightness(107%) contrast(91%);
-}
-.social-icons {
-  height: 1.5em;
-  width: 1.5em;
-  filter: invert(42%) sepia(65%) saturate(2055%) hue-rotate(310deg) brightness(100%) contrast(98%);
-}
-.social-buttons {
-  width: 100%;
-  height: 38%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  box-shadow: 0px 5px 5px 0px #3fffd9;
-}
-.nav-buttons {
-  width: 100%;
-  height: 55%;
-  display: flex;
-  box-shadow: 1px -5px 5px 0px #3fffd9;;
-}
+  height: 2.5em;
+  width: 2.5em;
+  filter: invert(95%) sepia(12%) saturate(656%) hue-rotate(21deg) brightness(107%) contrast(91%);}
