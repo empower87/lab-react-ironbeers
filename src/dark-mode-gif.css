@@ -88,20 +88,12 @@ html {
 .neo-list {
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: space-evenly;
   margin: 0 auto;
 }
 .social-list {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
 }
-.like-comment-container {
-  display: flex;
-
-}
-.individual-btn {
+.social-list li {
   height: 30px;
   width: 35px;
   color: #ec6aa0;
@@ -111,7 +103,7 @@ html {
   align-items: center;
   margin: 0px 10px 0px 10px;
   border-radius: 10px;
-  box-shadow: 4px 4px 8px #cbced1, -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #464646, -4px -4px 8px #717171;
 }
 .neo-list li {
   height: 40px;
@@ -123,8 +115,8 @@ html {
   margin: 0px 10px 0px 10px;
   border-radius: 10px;
   /* background: #e0e0e0; */
-  box-shadow: 4px 4px 8px #cbced1,
-             -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #464646,
+             -4px -4px 8px #717171;
 } 
 .Home {
   height: 100%;
@@ -141,7 +133,7 @@ html {
 
 footer {
   height: 15vh;
-  background: #ecf0f3;
+  background: #5c5c5c;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -155,7 +147,7 @@ footer {
   width: 100%;
   height: 60vh;
   box-shadow: 0px -5px 6px 4px #4848487a;
-  background: #ecf0f3e8;
+  background: #5c5c5c;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -168,11 +160,11 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  /* background: #20cfac; */
-  box-shadow: inset 2px 2px 10px 2px #1aa68a, inset -2px -2px 10px 2px #3fffd9;
+  background: #20cfac;
+  box-shadow: inset 2px 2px 5px 2px #1aa68a, inset -2px -2px 4px 2px #3fffd9;
 }
-
 header {
+  /* background-image: url('./images/house-arrest.gif'); */
   background-size: cover;
   height: 18vh;
   width: 100%;
@@ -184,8 +176,8 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  /* background: #ecf0f3; */
-  box-shadow: 2px 2px 8px 2px #1aa589, -2px -2px 8px 2px #3fffd9;
+  background: #5c5c5c;
+  box-shadow: 2px 2px 4px 2px #1aa589, -2px -2px 3px 2px #3fffd9;
 }
 
 .hammy {
@@ -209,9 +201,9 @@ header {
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  background: #ecf0f3;
-  box-shadow: inset 5px 5px 4px #c5c8ca, 
-              inset -4px -4px 6px #ffffff;
+  background: #5c5c5c;
+  box-shadow: inset 8px 8px 8px #464646,
+              inset -8px -8px 8px #717171;
 }
 .button-text {
   height: 20px;
@@ -222,8 +214,8 @@ header {
   color: #5c5c5c;
   background: #F0F3C8;
   /* background: #e0e0e0; */
-  box-shadow: 4px 4px 8px #cbced1,
-             -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #464646,
+             -4px -4px 8px #717171;
 }
 .sug-2 {
   margin-top: 20px;
@@ -243,7 +235,8 @@ header {
 .button-icons {
   height: 2.3em;
   width: 2.3em;
-  filter: invert(42%) sepia(65%) saturate(2055%) hue-rotate(310deg) brightness(100%) contrast(98%);}
+  filter: invert(95%) sepia(12%) saturate(656%) hue-rotate(21deg) brightness(107%) contrast(91%);
+}
 .social-icons {
   height: 1.5em;
   width: 1.5em;
@@ -255,11 +248,11 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  box-shadow: 0px 5px 5px 0px #20cfac;
+  box-shadow: 0px 5px 5px 0px #3fffd9;
 }
 .nav-buttons {
   width: 100%;
   height: 55%;
   display: flex;
-  box-shadow: 0px -5px 3px 0px #46f7d3;
+  box-shadow: 1px -5px 5px 0px #3fffd9;;
 }

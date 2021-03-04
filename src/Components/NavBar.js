@@ -5,16 +5,19 @@ import avatar2 from '../images/avatar2.svg'
 import social from '../images/social.svg'
 import social2 from '../images/social2.svg'
 import comment from '../images/comment.svg'
+import heart from '../images/heart.svg'
 
 function NavBar(props) {
     return (
         <footer>
             <div className="social-buttons">
-                <ul className="social-list">
-                    <li><img className="social-icons" src={comment}></img></li>
-                    <li><img className="social-icons" src={comment}></img></li>
-                    <li><img className="social-icons" src={comment}></img></li>
-                </ul>
+                <div className="social-list">
+                    <div className="individual-btn"><img className="social-icons" src={avatar2}></img></div>
+                    <div className="like-comment-container">
+                        <div className="individual-btn"><img className="social-icons" src={heart}></img></div>
+                        <div className="individual-btn"><img className="social-icons" src={comment}></img></div>
+                    </div>
+                </div>
             </div>
             <div className="nav-buttons">
                 <ul className="neo-list">
